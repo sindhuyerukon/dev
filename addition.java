@@ -1,21 +1,18 @@
-import java.util.Scanner;  
-public class SumOfNumbers2  
-{  
-public static void main(String args[])  
-{  
-int x, y, sum;  
-Scanner sc = new Scanner(System.in);  
-System.out.print("Enter the first number: ");  
-x = sc.nextInt();  
-System.out.print("Enter the second number: ");  
-y = sc.nextInt();  
-sum = sum(x, y);  
-System.out.println("The sum of two numbers x and y is: " + sum);  
-}  
-//method that calculates the sum  
-public static int sum(int a, int b)  
-{  
-int sum = a + b;  
-return sum;  
-}  
+import java.util.Scanner;
+public class AddTwoNumbers2 {
+
+    public static void main(String[] args) {
+        
+        int num1, num2, sum;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter First Number: ");
+        num1 = sc.nextInt();
+        
+        System.out.println("Enter Second Number: ");
+        num2 = sc.nextInt();
+        
+        sc.close();
+        sum = num1 + num2;
+        System.out.println("Sum of these numbers: "+sum);
+    }
 }  
